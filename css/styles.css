@@ -1,0 +1,291 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-image: url('../images/baby-colours.png');
+  font-family: 'Pacifico', cursive;
+}
+
+/** HEADER **/
+#header-nav {
+  width: 100%;
+  height: 100px;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Pacifico', cursive;
+  color:  #FF1493;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color:  #FF1493;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px #222;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+  object-position: top;
+}
+#nav-list a span {
+  font-size: 1.8em;
+  object-position: top;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color:  #FF1493;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px #222;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.cupcake-styling {
+  margin: 0;
+  padding: 0;
+}
+
+.cupcake-container1 {
+  padding: 0px;
+  background-image: url('../images/cupcake_1.png');
+  background-size: 350px 500px; 
+  margin: 0;
+  width: 25%;
+  float: left;
+  height: 1000px;
+  background-repeat: round;
+  }
+
+  .cupcake-container2 {
+  padding: 0px;
+  background-image: url('../images/cupcake_2.jpg');
+  background-size: 350px 500px; 
+  float: left;
+  width: 25%;
+  height: 1000px;
+  margin: 0;
+  background-repeat: round;
+  }
+
+  .cupcake-container3 {
+  padding: 0px;
+  background-image: url('../images/cupcake_3.jpg'); 
+  background-size: 350px 500px; 
+  float: left;
+  width: 25%;
+  height: 1000px;
+  margin: 0;
+  background-repeat: round;
+  } 
+
+  .cupcake-container4 {
+  padding: 0px;
+  background-image: url('../images/cupcake_4.jpg');
+  background-size: 350px 500px; 
+  float: left;
+  width: 25%;
+  height: 1000px;
+  background-repeat: round; 
+  }/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+ #header-nav {
+  height: 140px;  /* End Header */
+  }
+  .navbar-brand h1 {
+  text-align: center;
+  }
+
+   #nav-list a {
+  text-align: center;
+  object-position: top;
+  }
+
+  #nav-list a span {
+  text-align: center;
+  object-position: top;
+}
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  #header-nav {
+  height: 140px;
+  }
+
+  .navbar-brand h1 {
+  text-align: center;
+  }
+
+  #nav-list a {
+  text-align: center;
+  }
+
+  #nav-list a span {
+  text-align: center;
+}
+.cupcake-container1 {
+  width: 50%;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  }
+
+.cupcake-container2 {
+  width: 50%;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  }
+
+  .cupcake-container3 {
+  width: 50%;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  }
+
+  .cupcake-container4 {
+  width: 50%;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  }
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    background-color: #FFB6C1;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #FFB6C1;
+    color: #951c49;
+  }
+
+  .cupcake-container1 {
+  width: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 15px;
+  padding: 0;
+  height: 500px;
+  }
+
+.cupcake-container2 {
+  width: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 15px;
+  padding: 0;
+  height: 500px;
+  }
+
+  .cupcake-container3 {
+  width: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 15px;
+  padding: 0;
+  height: 500px;
+  }
+
+  .cupcake-container4 {
+  width: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 15px;
+  padding: 0;
+  height: 500px;
+  }
+
+
+/* End Header */
+}
